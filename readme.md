@@ -4,7 +4,7 @@ By default, the backlit keyboards of the Lenovo laptops do not turn on. One has 
  - The laptop powers on
  - The laptop wakes up from sleep
 
-The idea behind this project is simple. Lenovo laptops (at least the 2019 ones) ship with a DLL called **Keyboard_Core.dll** which is located in the following folder: **<ins>C:\ProgramData\Lenovo\ImController\Plugins\ThinkKeyboardPlugin\x86</ins>**. This is a .Net Framework class library (most likely written in C++/CLI) that exposes a public class called `KeyboardControl` which has two methods:
+The idea behind this project is simple. Lenovo laptops (at least the 2018-2019 ones, one of which I have, a P52) ship with a DLL called **Keyboard_Core.dll** which is located in the following folder: **<ins>C:\ProgramData\Lenovo\ImController\Plugins\ThinkKeyboardPlugin\x86</ins>**. This is a .Net Framework class library (most likely written in C++/CLI) that exposes a public class called `KeyboardControl` which has two methods:
 
 - `GetKeyboardBackLightLevel` - Returns an integer corresponding to the maximum backlight level of the keyboard
 - `SetKeyboardBackLightStatus` - Sets the keyboard backlight to a specific level, 0 being backlight off.
@@ -21,6 +21,6 @@ The idea behind this project is simple. Lenovo laptops (at least the 2019 ones) 
 - Source: Power-Troubleshooter
 - Event ID: 1
 
-More info on this can be foind at:
+More info on this can be found at:
 - https://sumtips.com/how-to/run-program-windows-wakes-up-sleep-hibernate/
 - https://superuser.com/questions/84442/trigger-task-scheduler-in-windows-7-when-computer-wakes-up-from-sleep-hibernate
